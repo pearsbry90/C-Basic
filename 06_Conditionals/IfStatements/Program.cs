@@ -50,3 +50,28 @@ else if(!isSnowing){
 else{
     Console.WriteLine("I don't even know what we are talking about!!");
 }
+
+
+// CHALLENGE
+bool isBornWithSuperPowers = true;
+bool isGoingToBeASuperHero = true;
+
+if (isBornWithSuperPowers)
+{
+    Console.WriteLine("Following in your parents footsteps.");
+}
+
+if (!isBornWithSuperPowers!)
+{
+    Console.WriteLine("You are still a beautiful baby.");
+}
+
+if (isBornWithSuperPowers || isGoingToBeASuperHero)
+{
+    Console.WriteLine("You already have your career built and planned out for you.");
+}
+
+if (isBornWithSuperPowers ^ isGoingToBeASuperHero);
+{
+    Console.WriteLine("You will still live and enjoy your life.");
+}
