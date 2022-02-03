@@ -8,7 +8,7 @@ namespace Variables
         {
             Console.WriteLine("What's your name?");
             string firstname = Console.ReadLine();
-            Console.WriteLine(firstName);
+            Console.WriteLine(lastName);
 
             Console.WriteLine("What is your favorite color?");
             string color = Console.ReadLine();

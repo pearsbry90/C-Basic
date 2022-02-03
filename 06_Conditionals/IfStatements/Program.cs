@@ -1,9 +1,11 @@
 ﻿bool isSnowing = false;
 bool isGoingOutside = true;
+// syntax for an "if" statement is (true/false value)
+// {body of code, execute this code if the above statement is true}
 
-if(isSnowing)
+if (isSnowing)
 {
-Console.WriteLine("It is snowing out!");    
+    Console.WriteLine("It's snowing out!");    
 }
 
 // Is snowing AND is going outside
@@ -19,13 +21,16 @@ if (!isSnowing || !isGoingOutside)
 
 Console.WriteLine("I do not need any snow boots!!");
 
+// Exclusively not snowing OR going outside
 if(isSnowing ^ isGoingOutside)
 {
 Console.WriteLine("I will only go outside once the snow stops!!!");
 } 
 
-
-if(!isSnowing){
+// OTHER OPTIONS
+// "else" statements: changing the conditions, but keeping the results
+// "else" allows a followup statement to "if" statements that'll only be executed if teh condition isnt' met
+if (!isSnowing){
     Console.WriteLine("There is no need to shovel snow!!");
 }
 // Changing "if" to "else" allows "free range" of an answer to go with the previous "if" statement
