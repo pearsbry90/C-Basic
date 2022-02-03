@@ -16,24 +16,24 @@ switch (name)
 Console.WriteLine("How are you feeling today on a scale 1-5?");
 string feelingRating = Console.ReadLine();
 
-switch (feelingRating);
+switch (feelingRating)
 {
     case "5":
         Console.WriteLine("That's great to hear!");
         break;
-    case "4"
+    case "4":
         Console.WriteLine("Good Stuff");
         break;
-    case "3"
+    case "3":
         Console.WriteLine("Hope things improve!");
         break;    
-    case "2"  
+    case "2":  
         Console.WriteLine("Oh. Sorry to hear that!");
         break;
-    case "1"
+    case "1":
         Console.WriteLine("Dang. We hope your day get better!");
     // This is ONLY used if none of the other cases are matches
-    default
+    default:
         Console.WriteLine("Sorry, we don't understand. Please try again later.");
         break;
 }      
