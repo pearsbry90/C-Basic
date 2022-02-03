@@ -22,4 +22,3 @@ Console.WriteLine(interpolationResult);
 Console.WriteLine($"His name is still {firstName} {lastName}!");
 
 string interpolationResult = $"He does not want to change his name, but wants to be called Mr. {lastName}.";
-        }

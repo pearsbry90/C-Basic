@@ -3,7 +3,7 @@ bool isGoingOutside = true;
 
 if(isSnowing)
 {
-Console.WriteLine("It is snowing out!")    
+Console.WriteLine("It is snowing out!");    
 }
 
 // Is snowing AND is going outside
