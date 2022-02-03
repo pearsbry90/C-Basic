@@ -81,8 +81,7 @@ if (!isBornWithSuperPowers)
     Console.WriteLine("You will have an Extraodinary life.");
 }
 
-else
-{
+else{
     Console.WriteLine("You don't have to worry about the responsibilities Hero's do.");
 }
 
@@ -91,7 +90,6 @@ if (isGoingToBeASuperHero)
     Console.WriteLine("You will be seen as a Lifesavor!");
 }
 
-else
-{
+else{
     Console.WriteLine("No stress to worry about saving the world!");
 }
