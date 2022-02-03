@@ -11,15 +11,13 @@ string output = age >= 18 ? "You can vote!" : "You're too young to vote.";
 Console.WriteLine(output);
 
 
-// CHALLENGE
-bool isOldEnough = true;
-bool isTooYoung = true;
-
-if (isOldEnough)
+// CHALLENGE <written with an if else statement>
+if (age >= 18)
 {
     Console.WriteLine("I'm not sure whom to vote for.");
 }
 
 else{
-    Console.WriteLine("I cannot wait to turn 18 y/o!");
+    Console.WriteLine("Gotta wait until your 18.");
 }
+Console.WriteLine(output);
