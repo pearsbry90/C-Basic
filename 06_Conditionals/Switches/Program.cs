@@ -60,8 +60,9 @@ switch (friend)
     case "Chris":
         Console.WriteLine("Get him on Dragon Ball Z and their series, and he'll talk for hours!");
         break;
-    case "Kendric":
+    case "Down":
         Console.WriteLine("Just a solid bro to hangout with while watching anime.");
+        break;
     case "Andrew":
         Console.WriteLine("My anime guru, 'I tell you what'!");
         break;
