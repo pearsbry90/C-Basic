@@ -23,3 +23,16 @@ Console.WriteLine($"NOT False = {isTrue}");
 Console.WriteLine($"False AND True = {falseANDExample}");
 Console.WriteLine($"True OR True = {trueOrExample}");
 Console.WriteLine($"True XOR True = {falseExclusiveOr}"); 
+
+// Comparison Operators
+bool isGreaterThan = 10 > 10;
+bool isGreaterThanorEqualTo = 10 >= 10;
+Console.WriteLine($"10 > 10 is {isGreaterThan}, and 10 >= 10 {isGreaterThanorEqualTo}");
+
+bool isLessThan = 5 < 5;
+bool isLessThanorEqualTo = 5 <= 5;
+Console.WriteLine($"5 < 5 is {isLessThan}, while 5 <= 5 {isLessThanorEqualTo}");
+
+bool equality = 17 == 9;
+bool inequality = 17 != 9;
+Console.WriteLine($"17 == 9 and 17 !=9 are {equality} and {inequality}");
