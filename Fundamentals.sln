@@ -25,6 +25,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "05_Booleans", "05_Booleans"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Programs", "05_Booleans\Programs\Programs.csproj", "{7667BFC9-0C5B-4015-8748-00832612D791}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Booleans", "05_Booleans\Booleans.csproj", "{729440CD-26E5-4A09-B464-31813F109DCD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -146,6 +148,18 @@ Global
 		{7667BFC9-0C5B-4015-8748-00832612D791}.Release|x64.Build.0 = Release|Any CPU
 		{7667BFC9-0C5B-4015-8748-00832612D791}.Release|x86.ActiveCfg = Release|Any CPU
 		{7667BFC9-0C5B-4015-8748-00832612D791}.Release|x86.Build.0 = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|x64.Build.0 = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Debug|x86.Build.0 = Debug|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|x64.ActiveCfg = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|x64.Build.0 = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|x86.ActiveCfg = Release|Any CPU
+		{729440CD-26E5-4A09-B464-31813F109DCD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0A06BCA8-43E9-43A3-B6C3-FA7CA52ABC93} = {1F7BC22A-FFDE-4977-BA72-C63E66EEEA5E}
