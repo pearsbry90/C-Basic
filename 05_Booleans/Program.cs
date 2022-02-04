@@ -1,6 +1,7 @@
 ﻿// Boolean Logical Operators
+// Negative Operator
 bool isCool = false;
-isCool = true; 
+isCool = !true; 
 
 // Backwords saying
 bool isTrue = !false;
@@ -36,3 +37,10 @@ Console.WriteLine($"5 < 5 is {isLessThan}, while 5 <= 5 {isLessThanorEqualTo}");
 bool equality = 17 == 9;
 bool inequality = 17 != 9;
 Console.WriteLine($"17 == 9 and 17 !=9 are {equality} and {inequality}");
+
+// Extra Work
+// $ using a predefine bool/not just using a normal text
+bool isEvil = true;
+bool isHero = !false;  
+Console.WriteLine($"All For One is a Villian. {isEvil}.");
+Console.WriteLine($"It's easy to be a light to the world. {isHero}.");

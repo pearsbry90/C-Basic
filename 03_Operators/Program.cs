@@ -16,14 +16,14 @@ namespace Operators
         // int results = numOne + numTwo;
 
             int subtractionResult = 5 - 2;
-            Console.WriteLine(" 5 - 2 =" + subtractionResult);
+            Console.WriteLine(" 5 - 2 = " + subtractionResult);
 
             int multiplicationResult = 5 * 2;
-            Console.WriteLine("5 * 2 =" + multiplicationResult);
+            Console.WriteLine("5 * 2 = " + multiplicationResult);
 
         // When adding a decimal/double, make sure to start it as "decimal" and not "int"
             decimal divisionResult = 5m / 2m;
-            Console.WriteLine("5 / 2 =" + divisionResult);
+            Console.WriteLine("5 / 2 = " + divisionResult);
 
         // --Modules/Remainder Operator
             Console.WriteLine(10 % 2);
