@@ -28,4 +28,31 @@ foreach(char letter in instructorName)
     {
         Console.WriteLine(letter)
     }
-// Switching out the "o" in Bryon to an "a", printing "Bryan"
+// Switching out the "o" in Bryon to an "a", printing "Bryan" after the "Hello's ..."
+
+// EXERCISE
+string ninjaNames = "Mutant Ninja Turtles";
+string [] ninjaNames = new string [] {"Leo, Ralph, Donni, Mikey" ninjaNames};
+
+foreach(string name in ninjaNames)
+{
+    Console.WriteLine($"Who wants pizza {ninjaNames}?");
+}
+
+int [] number = new int [] {1, 5, 10; -4, -12,0};
+
+foreach (int number in numbers)
+{
+    if (number > 0)
+    {
+        Console.WriteLine($"{number} is a positive number.");
+    }
+    else if (number < 0)
+    {
+        Console.WriteLine($"{number} is a negative number.");
+    }
+    else 
+    {
+        Console.WriteLine($"{number} is a neutral number.");
+    }
+}
