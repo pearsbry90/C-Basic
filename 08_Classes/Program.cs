@@ -33,6 +33,13 @@ me.Introduction();
 Person luke = new Person("Luke", "Skywalker", new DateTime(1977,05,25));
 luke.Introduction();
 
+// Making a person and a donut at the same time
+Person homer = new Person("Homer", "Simpson", new DateTime (1980,07,04), "Glazed donut", true, true);
+homer.Introduction();
+Console.WriteLine($"He loves {homer.Donut.GetDonutType()}");
+
+// {get;}: get/give: "ownership"; {set;}: set/take - assigning value to something
+
 namespace Classes
 {
     class Donut
@@ -157,6 +164,22 @@ namespace Classes
 
     class Person 
     {
+        public Person(){}
+
+        public Person(string firstName, string lastName, DateTime doB)
+        {
+            firstName = firstName;
+            lastName = lastName;
+            DateofBirth = doB;
+        }
+
+        // Inheritance ":"
+        // Chaining the constructors together, looks for a matching constructor for those variables, then uses it
+        // BONUS NOTES
+        public Person (string firstName, string lastName, DateTime doB, string donutType, bool IsSprinkles, bool hasIcing) : this(firstName, lastName, doB)
+        {
+            Donut = new Donut(donutType, IsSprinkles, hasIcing, 2.99);
+        }
         public string firstName {get; set;}
         public string lastName {get; set;}
         // ReadONLY Property (singel property - not going anywhere)
