@@ -8,7 +8,7 @@ do
     Console.WriteLine("Hello!");
     iterator++;
 }
-while (iterat < 5);
+while (iterator < 5);
 // Getting 5 "Hello!"'s (0 is technically 1)
 
 do
