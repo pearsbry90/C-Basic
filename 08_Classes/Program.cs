@@ -29,6 +29,10 @@ me.DateofBirth = new DateTime(1990,06,01);
 
 me.Introduction();
 
+// A shortcut way of of this compared to the above Introduction
+Person luke = new Person("Luke", "Skywalker", new DateTime(1977,05,25));
+luke.Introduction();
+
 namespace Classes
 {
     class Donut
