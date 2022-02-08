@@ -22,6 +22,13 @@ greet.PrintRandomGreeting();
 Calculator calculator = new Calculator();
 Console.WriteLine(calculator.Age(new DateTime(1990,06,01)));
 
+Person me = new Person();
+me.firstName = "Bryon";
+me.lastName = "Pearson";
+me.DateofBirth = new DateTime(1990,06,01);
+
+me.Introduction();
+
 namespace Classes
 {
     class Donut
@@ -108,6 +115,12 @@ namespace Classes
         {
             return numOne + numTwo;
         }
+
+        // Overload 
+        public double Add(double numOne, double numTwo)
+        {
+            return numOne + numTwo;
+        }
         public int Subtract(int numOne, int numTwo)
         {
             return numOne - numTwo;
@@ -138,4 +151,42 @@ namespace Classes
         }
     }
 
+    class Person 
+    {
+        public string firstName {get; set;}
+        public string lastName {get; set;}
+        // ReadONLY Property (singel property - not going anywhere)
+        public string fullName 
+        {
+            get
+            {
+                return firstName + " " + lastName;
+            }
+        }
+        public DateTime DatofBirth {get; set;}
+        public int Age 
+        {
+            get
+            {
+                // DRY Style (not repeating oneself)
+                // Already has the code above; used in one spot and referenced everywhere else
+                Calculator calc = new Calculator();
+                return calc.Age(DateofBirth);
+            }
+        }
+
+        public void Greet()
+        {
+            Greeter greeter = new Greeter();
+            // Semantic Satiation (using one word multiple times)
+            greeter.PrintHello(fullName);
+        }
+
+        public void Introduction()
+        {
+            Greeter greeter = new Greeter();
+            Console.WriteLine($"{greeter.PrintRandomGreeting}, my name is {fullName} and I am {Age} years old!"); 
+    
+        }
+    }
 }
