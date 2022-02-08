@@ -22,11 +22,11 @@ foreach(char letter in instructorName)
 foreach(char letter in instructorName)
     if(letter == '0')
 {
-    Console.WriteLine('a')
+    Console.WriteLine('a');
 }
     else
     {
-        Console.WriteLine(letter)
+        Console.WriteLine(letter);
     }
 // Switching out the "o" in Bryon to an "a", printing "Bryan" after the "Hello's ..."
 

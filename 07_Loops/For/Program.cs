@@ -1,5 +1,5 @@
 ﻿// A for loop is used for saying "do this for a certain amount of time"
-// Ex. If you have 5 cookies and you're eating one at a time until they're gone, you're going to eat a cookie for a set amount of iterations which in this case is 5.
+// Ex. If you have 5 cookies, you'll eat 1 cookie until they're gone. You're going to eat a cookie for a set amount of iterations which in this case is 5.
 
 // Create initial target number
 int number = 100;
@@ -9,7 +9,7 @@ int number = 100;
 for (int i = 0; i < number; i++)
 // i++ is saying i + number
 {
-    Console.WriteLine(i)
+    Console.WriteLine(i);
 }
 
 // 1 - for Keyword
@@ -39,7 +39,7 @@ string userInput = Console.ReadLine();
 
 int target = int.Parse(userInput);
 
-for (int i = 0; i <= target, i++)
+for (int i = 0; i <= target; i++)
 {   
     Console.WriteLine(i);
 }
