@@ -1,25 +1,26 @@
-﻿// Described as teh blueprint of data type
+﻿// Described as the blueprint of data type
 // Main components of how your program and data are organized
+// Classes are like cookie cutter: cuts them however I want them to turn out
 using Classes; 
 
-Donut doug = new Donut ("Jelly Filled", true, false);
+Donut doug = new Donut ("Jelly Filled", true, false); //All these are different types of fields (another word besides "blueprint")
 doug.SetDonutType("Glazed");
 doug.Filling = "Strawberry Jam";
+doug.Price = 2.99;
 Console.WriteLine(doug.GetDonutType());
 Console.WriteLine(doug.Filling);
 
 Donut derrick = new Donut("Chocolate, Vanilla", true, false, 3.99);
-Console.WriteLine(derrick.Price);
+Console.WriteLine(derrick.Price); //Printing out the price of derrick's donuts //Can change out the "Properties" for derrick by using the "." after his name (method)
 
-// NEW CLASS pt.2
-Greeter greet = new Greeter();
+Greeter greet = new Greeter(); // Instantiating*;  using different methods 
 Console.WriteLine(greet.SayHello("Bryon"));
 greet.PrintHello("Ryo");
 greet.PrintHello("Pearson");
 
 greet.PrintRandomGreeting();
 
-Calculator calculator = new Calculator();
+Calculator calculator = new Calculator(); // Using "new"
 Console.WriteLine(calculator.Age(new DateTime(1990,06,01)));
 
 Person me = new Person();
@@ -66,8 +67,8 @@ namespace Classes
         }
 
             // Method V
-            // 1       2      3
-                public string GetDonut ()
+            // 1 access modifier       2      3 method signature
+                public string GetDonut () //perimeter inside the ()
             {
                 // 4
                 return donutType;
@@ -89,12 +90,12 @@ namespace Classes
             public double Price {get; set;}
     }
 
-    // NEW CLASS pt. 2
     class Greeter
     {
         Random _random = new Random();
 
         // Overload methods, same names but different parameters, SO: different signatures
+        // This specifically is a "return type" of any type (char, double, dec, float, etc)
         public string SayHello()
         {
             return "Hello!";
@@ -104,6 +105,9 @@ namespace Classes
             return $"Hello {name}!";
         }
         
+        // Void: doesn't want to return anything; "ends there"
+        // We already have the information *name*; do not have to repeat the type
+        // Helper Method; saving time coding
         public void PrintHello(string name)
         {
             Console.WriteLine($"Greetings {name}!");
@@ -117,6 +121,13 @@ namespace Classes
             string randomgreeting = availableGreeting.ElementAt(randomNumber);
             Console.WriteLine(randomgreeting);
             // Every time you "run" this, the command will then choose a random number print it  
+        }
+          public string RandomGreeting()
+        {
+            string[] availableGreeting = new string[]{"Hello", "Howdy", "Sup", "Yo", "Good day to you good sir", "Wazzzzup"};
+            int randomNumber = _random.Next(0,availableGreeting.Length);
+            string randomgreeting = availableGreeting.ElementAt(randomNumber);
+            return (randomgreeting);
         }
     }
     
@@ -148,6 +159,8 @@ namespace Classes
         {
             return numOne % numTwo;
         }
+        // (Giving the information that is need: IMAGING ME WALKING TO IT FOR THE INFORMATION IT'S ASKING FOR)
+
         public int Age(DateTime birthdate)
         {
             TimeSpan ageSpan = DateTime.Now - birthdate;
@@ -166,6 +179,7 @@ namespace Classes
     {
         public Person(){}
 
+        // These are "instructors"
         public Person(string firstName, string lastName, DateTime doB)
         {
             firstName = firstName;
@@ -174,7 +188,7 @@ namespace Classes
         }
 
         // Inheritance ":"
-        // Chaining the constructors together, looks for a matching constructor for those variables, then uses it
+        // Chaining the "constructors" together, looks for a matching constructor for those variables, then uses it
         // BONUS NOTES
         public Person (string firstName, string lastName, DateTime doB, string donutType, bool IsSprinkles, bool hasIcing) : this(firstName, lastName, doB)
         {
@@ -205,7 +219,7 @@ namespace Classes
         public void Greet()
         {
             Greeter greeter = new Greeter();
-            // Semantic Satiation (using one word multiple times)
+            // Semantic Satiation (using one word multiple times)*
             greeter.PrintHello(fullName);
         }
 

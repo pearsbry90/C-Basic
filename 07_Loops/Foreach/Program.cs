@@ -20,7 +20,7 @@ foreach(char letter in instructorName)
 // Being able to print off the letters of the names
 
 foreach(char letter in instructorName)
-    if(letter == '0')
+    if(letter == 'o')
 {
     Console.WriteLine('a');
 }
@@ -32,16 +32,16 @@ foreach(char letter in instructorName)
 
 // EXERCISE
 string ninjaNames = "Mutant Ninja Turtles";
-string [] ninjaNames = new string [] {"Leo, Ralph, Donni, Mikey" ninjaNames};
+string [] ninja = new string [] {"Leo, Ralph, Donni, Mikey", ninjaNames};
 
-foreach(string name in ninjaNames)
+foreach(string name in ninja)
 {
     Console.WriteLine($"Who wants pizza {ninjaNames}?");
 }
 
 int [] number = new int [] {1, 5, 10, -4, -12, 0};
 
-foreach (int number in number)
+foreach(int number in number)
 {
     if (number > 0)
     {

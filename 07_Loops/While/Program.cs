@@ -13,3 +13,10 @@ while (number <= 100)
     Console.WriteLine(number);
     number = number + 5;
 }
+
+// Infinite Loop
+while (number <= 100)
+{ 
+Console.WriteLine(number);
+number = number = 5;
+}
