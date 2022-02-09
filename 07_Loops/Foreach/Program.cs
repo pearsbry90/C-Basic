@@ -39,9 +39,9 @@ foreach(string name in ninjaNames)
     Console.WriteLine($"Who wants pizza {ninjaNames}?");
 }
 
-int [] number = new int [] {1, 5, 10; -4, -12,0};
+int [] number = new int [] {1, 5, 10, -4, -12, 0};
 
-foreach (int number in numbers)
+foreach (int number in number)
 {
     if (number > 0)
     {

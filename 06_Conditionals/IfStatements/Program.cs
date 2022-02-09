@@ -22,14 +22,14 @@ if (!isSnowing || !isGoingOutside)
 Console.WriteLine("I do not need any snow boots!!");
 
 // Exclusively not snowing OR going outside
-if(isSnowing ^ isGoingOutside)
+if (isSnowing ^ isGoingOutside)
 {
 Console.WriteLine("I will only go outside once the snow stops!!!");
 } 
 
 // OTHER OPTIONS
-// "else" statements: changing the conditions, but keeping the results
-// "else" allows a followup statement to "if" statements that'll only be executed if teh condition isnt' met
+// "else" statements: adds a followup statement that'll be executed if the conditions are not met, but keeping the results
+// "else" allows a followup statement to "if" statements that'll only be executed if the condition isn't met
 if (!isSnowing){
     Console.WriteLine("There is no need to shovel snow!!");
 }
@@ -41,16 +41,15 @@ else{
 // The 1st "if" is a true statemtent (based off of "bool"), it will be read first
 // The "!" changes the statement to false
 
-if(isSnowing){
+if (isSnowing){
     Console.WriteLine("I guess I have to go clear off my roommates car!!");
 }
-else if(!isSnowing){
+else if (!isSnowing){
     Console.WriteLine("I don't have to clear off the cars!!");
 }
 else{
     Console.WriteLine("I don't even know what we are talking about!!");
 }
-
 
 // CHALLENGE
 bool isBornWithSuperPowers = true;

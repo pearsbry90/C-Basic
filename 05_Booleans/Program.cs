@@ -42,5 +42,5 @@ Console.WriteLine($"17 == 9 and 17 !=9 are {equality} and {inequality}");
 // $ using a predefine bool/not just using a normal text
 bool isEvil = true;
 bool isHero = !false;  
-Console.WriteLine($"All For One is a Villian. {isEvil}.");
-Console.WriteLine($"It's easy to be a light to the world. {isHero}.");
+Console.WriteLine($"All For One is a {isEvil}.");
+Console.WriteLine($"Everyone wakes up wanting to be a {isHero}?");
