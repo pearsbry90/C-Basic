@@ -31,12 +31,12 @@ foreach(char letter in instructorName)
 // Switching out the "o" in Bryon to an "a", printing "Bryan" after the "Hello's ..."
 
 // EXERCISE
-string ninjaNames = "Mutant Ninja Turtles";
-string [] ninja = new string [] {"Leo, Ralph, Donni, Mikey", ninjaNames};
+string ninjaName = "Mutant Ninja Turtles";
+string [] ninjas = new string [] {"Leo, Ralph, Donni, Mikey", ninjaName};
 
-foreach(string name in ninja)
+foreach(string name in ninjas)
 {
-    Console.WriteLine($"Who wants pizza {ninjaNames}?");
+    Console.WriteLine($"Who wants pizza {ninjas}?");
 }
 
 int [] number = new int [] {1, 5, 10, -4, -12, 0};

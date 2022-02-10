@@ -13,9 +13,9 @@ while (iterator < 5);
 
 do
 {
-    Console.WriteLine("My conditon is false!");
+    Console.WriteLine("My condition is false!");
 }
-while(false);
+while(false); // When it hits above false, 
 
 while(false)
 {
